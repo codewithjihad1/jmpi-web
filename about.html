@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>JMPI - WEB</title>
+        <link href="./styles/styles.css"></link>
+    </head>
+    <body>
+
+
+        <header class="bg-white">
+            <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+              <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Your Company</span>
+                  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                </a>
+              </div>
+              <div class="flex lg:hidden">
+                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden lg:flex lg:gap-x-12">
+                <div class="relative">
+                  <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+                    Product
+                    <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+          
+                  <!--
+                    'Product' flyout menu, show/hide based on flyout menu state.
+          
+                    Entering: "transition ease-out duration-200"
+                      From: "opacity-0 translate-y-1"
+                      To: "opacity-100 translate-y-0"
+                    Leaving: "transition ease-in duration-150"
+                      From: "opacity-100 translate-y-0"
+                      To: "opacity-0 translate-y-1"
+                  -->
+                  <div class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+                    <div class="p-4">
+                      <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                        <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                          <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                          </svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold text-gray-900">
+                            Analytics
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="mt-1 text-gray-600">Get a better understanding of your traffic</p>
+                        </div>
+                      </div>
+                      <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                        <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                          <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+                          </svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold text-gray-900">
+                            Engagement
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="mt-1 text-gray-600">Speak directly to your customers</p>
+                        </div>
+                      </div>
+                      <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                        <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                          <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                          </svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold text-gray-900">
+                            Security
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="mt-1 text-gray-600">Your customers’ data will be safe and secure</p>
+                        </div>
+                      </div>
+                      <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                        <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                          <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                          </svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold text-gray-900">
+                            Integrations
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="mt-1 text-gray-600">Connect with third-party tools</p>
+                        </div>
+                      </div>
+                      <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                        <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                          <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                          </svg>
+                        </div>
+                        <div class="flex-auto">
+                          <a href="#" class="block font-semibold text-gray-900">
+                            Automations
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                      <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                        <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm6.39-2.908a.75.75 0 01.766.027l3.5 2.25a.75.75 0 010 1.262l-3.5 2.25A.75.75 0 018 12.25v-4.5a.75.75 0 01.39-.658z" clip-rule="evenodd" />
+                        </svg>
+                        Watch demo
+                      </a>
+                      <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100">
+                        <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" />
+                        </svg>
+                        Contact sales
+                      </a>
+                    </div>
+                  </div>
+                </div>
+          
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+              </div>
+              <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="lg:hidden" role="dialog" aria-modal="true">
+              <!-- Background backdrop, show/hide based on slide-over state. -->
+              <div class="fixed inset-0 z-10"></div>
+              <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                  <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                  </a>
+                  <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="mt-6 flow-root">
+                  <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                      <div class="-mx-3">
+                        <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                          Product
+                          <!--
+                            Expand/collapse icon, toggle classes based on menu open state.
+          
+                            Open: "rotate-180", Closed: ""
+                          -->
+                          <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+                        <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                        <div class="mt-2 space-y-2" id="disclosure-1">
+                          <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Analytics</a>
+                          <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Engagement</a>
+                          <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Security</a>
+                          <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Integrations</a>
+                          <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Automations</a>
+                          <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Watch demo</a>
+                          <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact sales</a>
+                        </div>
+                      </div>
+                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                    </div>
+                    <div class="py-6">
+                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          
+
+
+
+
+
+
+
+
+        <main class="container main_page">
+            <!--top bar start-->
+            <div class="row top_bar">
+                <a href="mailto:modelpolytechnic.info@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"> modelpolytechnic.info@gmail.com</i></a>
+                <a href="tel:01710544252"><i class="fa fa-volume-control-phone" aria-hidden="true"> 01710544252</i></a>
+            </div>
+
+
+            <!--top bar end--><!--Slider start-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header_area">
+                        <div class="slider">
+                            <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:100%;margin:0 auto;">
+                                <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                                    <ul class="amazingslider-slides" style="display:none;">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div align="center">
+                            <div style="margin-left: 10%; margin-right: 10%;">							
+                                <img  src="http://mpi.edu.bd/public/image/MPI_First_page_logo.png" alt="" width="100%" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Slider end--> 
+            <!-- ********  Start navbar ******** --> 
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" >
+                            <li><a href="http://mpi.edu.bd/">প্রথম পাতা</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">আমাদের সম্পর্কে  <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://mpi.edu.bd/m/principal">অধ্যক্ষের বাণী</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/vice_principal">উপাধ্যক্ষের বাণী</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/introduction">ইনস্টিটিউট পরিচিতি</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/">লক্ষ্য ও উদ্দেশ্য</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/">কার্যাবলী</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/">অর্গানোগ্রাম</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/about">অবকাঠামো </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/onnerboard"> প্রাক্তন অধ্যক্ষগণ </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">শিক্ষকদের তথ্য <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://mpi.edu.bd/m/teachers/Computer">কম্পিউটার</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/teachers/Civil"> সিভিল </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/teachers/Mechanical"> মেকানিক্যাল </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/teachers/Electrical"> ইলেকট্রিক্যাল </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/teachers/Electronics"> ইলেকট্রনিক্স </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/teachers/Power"> পাওয়ার </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/teachers/Electro-medical"> ইলেক্ট্রো-মেডিকেল </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/teachers/RS"> আর এস </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/teachers/Office">অফিস শাখা</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> ছাত্রছাত্রীর তথ্য <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://mpi.edu.bd/m/students/Computer">কম্পিউটার</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/students/Civil"> সিভিল </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/students/Mechanical"> মেকানিক্যাল </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/students/Electrical"> ইলেকট্রিক্যাল </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/students/Electronics"> ইলেকট্রনিক্স </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/students/Power"> পাওয়ার </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/students/Electro-medical"> ইলেক্ট্রো-মেডিকেল </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> একাডেমিক <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://mpi.edu.bd/results/">রেজাল্ট পাবলিশ</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://result.mpi.edu.bd/">অনলাইন রেজাল্ট</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/routin">ক্লাশ রুটিন </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a target="_blank" href="https://drive.google.com/drive/u/0/folders/0BynIJ2cATXt3NmxhWC1JTDd3RHc">সিলেবাস </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a target="_blank" href="https://drive.google.com/drive/folders/0BynIJ2cATXt3VHdMWXZpdHlpQ0k">প্রবিধান </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/calender"> একাডেমিক ক্যালেনডার </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/digitalcontent"> ডিজিটাল কন্টেন্ট </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/semplan"> সেমিষ্টার প্ল্যান </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://mpi.edu.bd/notice/">নোটিশ </a></li>
+                            <li><a href="http://mpi.edu.bd/m/elearning">ই-লার্নিং </a></li>
+                            <li class="dropdown">
+                                <a href=""  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">গ্যালারী<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://mpi.edu.bd/m/gallery">ফটোগ্যালারী</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="http://mpi.edu.bd/m/video">ভিডিওগ্যালারী</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://mpi.edu.bd/m/contactus">যোগাযোগ </a></li>
+                            <li><a href="http://mpi.edu.bd/m/citizen">সিটিজেন চার্টার</a></li>
+                            <li><a target="new" href="https://mujib100.gov.bd/">মজিব কর্ণার</a></li>
+                            <li><a href="http://mpi.edu.bd/m/apa">Annual Performance Agreement (APA)</a> </a></li>
+                            <li><a href="http://mpi.edu.bd/m/jobplacement"> Job Placement Cell</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Academic Ceritficate<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://mpi.edu.bd/clearance" target="_blank">না দাবী প্রত্যয়নপত্র</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a target="_blank" href="http://testimonial.mpi.edu.bd">Testimonial </a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a target="_blank" href="http://mpi.edu.bd/clearance/search">Course Completion Certificate</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://mpi.edu.bd/m/app">Annual Procurement Plan (APP)</a> </a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+            </div>
+
+
+            <!-- End Navber -->
+            <!-- Start left Section -->
+            <div class="row" id="content">
+                <div class="col-md-9 content_area">
+                    <!--div class="col-md-12 " >
+                        <div class="countse">
+                           <img src="http://mujib100.gov.bd/assets/images/logo.png" alt="" style="width:225px;height:150px;float:left;">
+                           
+                        </div>
+                        </div-->
+                    <div class="col-md-12 leatest_updates" style="margin-bottom:15px;" >
+                        <div class="" data-spy="marquee" data-life="2">
+                            <div class="top_notice" >
+                                <div class="col-md-2 col-sm-4 col-xs-12" style="background:#609513;;"> <span style="font-size:18px;font-weight:bolder;color:#ffffff; line-height: 40px;">বর্তমান খবর:</span> </div>
+                                <div class="col-md-10 col-sm-8 col-xs-12" style="background:#609513;;">
+                                    <marquee scrollamount="3">
+                                        <p> 
+                                            <a href="http://mpi.edu.bd/m/breaking_news/27/a2i কর্তৃক তৈরীকৃত ময়মনসিংহ পলিটেকনিক ইনস্টিটিউট এর নতুন ওয়েব সাইট এড্রেস  mpi.polytech.gov.bd" style="color:white; text-decoration: none;">a2i কর্তৃক তৈরীকৃত ময়মনসিংহ পলিটেকনিক ইনস্টিটিউট এর নতুন ওয়েব সাইট এড্রেস  mpi.polytech.gov.bd</a> &nbsp; || 
+                                        </p>
+                                    </marquee>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End marquee notice -->
+                    <!-- Start notice -->
+                    <div class="col-md-12 header_notice">
+                        <a href="http://mpi.edu.bd//notice/">
+                            <h4>নোটিশ বোর্ড</h4>
+                        </a>
+                        <div class="noticebody" style=" border: 1px solid #aaa;font-size:15px;">
+                            <ul>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/bc66f01799.pdf" target="_blank">&nbsp;২য়, ৪র্থ ও ৬ষ্ঠ পর্বের পর্বমধ্য পরীক্ষা ২০২৩ সংক্রান্ত</a>&nbsp;&nbsp;<span>০১/১০/২০২৩ খ্রিঃ</span> <img class="lazy" style="width:40px;" data-src="http://mpi.edu.bd//public/image/new.gif" alt="new icon"> </a>
+                                </li>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/2c22315c4f.pdf" target="_blank">&nbsp;ক্লাশে উপস্থিত সংক্রান্ত</a>&nbsp;&nbsp;<span>১৮-০৯-২০২৩</span>  </a>
+                                </li>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/d6be0ef3f9.pdf" target="_blank">&nbsp;আখেরি চাহার সোম্বা উপলক্ষ্যে একাডেমিক কার্যক্রম বন্ধ থাকার নোটিশ</a>&nbsp;&nbsp;<span>12.09.2023</span>  </a>
+                                </li>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/2cb8f85a4b.pdf" target="_blank">&nbsp;মেকা-আপ কোর্স ভর্তি সংক্রান্ত </a>&nbsp;&nbsp;<span>০৪/০৯/২০২৩ খ্রিঃ</span>  </a>
+                                </li>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/29e5488044.phtml" target="_blank">&nbsp;Welcome </a>&nbsp;&nbsp;<span>29-08-2023</span>  </a>
+                                </li>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/635fec88cb.xlsx" target="_blank">&nbsp;ব্লকড এবং বাউন্সড  শিক্ষার্থীর তালিকা </a>&nbsp;&nbsp;<span>২৭/০৮/২০২৩ খ্রিঃ</span>  </a>
+                                </li>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/ec3526218f.pdf" target="_blank">&nbsp;এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি  সংক্রান্ত নোটিশ।</a>&nbsp;&nbsp;<span>২২/০৮/২০২৩ খ্রিঃ</span>  </a>
+                                </li>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/13ef40a9c4.pdf" target="_blank">&nbsp;উপ-বৃত্তি সংক্রান্ত নোটিশ।</a>&nbsp;&nbsp;<span>21/08/2023</span>  </a>
+                                </li>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/dfd665b008.pdf" target="_blank">&nbsp;পূর্ণঃভর্তির নোটিশ</a>&nbsp;&nbsp;<span>২০/০৮/২০২৩ খ্রিঃ</span>  </a>
+                                </li>
+                                <li> <a href="http://mpi.edu.bd/public/image/notice/5d069076f1.pdf" target="_blank">&nbsp;বদলীতে ভার্তির নোটিশ</a>&nbsp;&nbsp;<span>২০/০৮/২০২৩ খ্রিঃ</span>  </a>
+                                </li>
+                            </ul>
+                            <!--img class="new lazyload"  src="/public/image/backend_logo.png" alt="MPI"-->
+                            <img class=" new lazy" data-src="http://mpi.edu.bd//public/image/backend_logo.png" alt="mpi logo">
+                        </div>
+                        <div class="pull-right noti">
+                            <a class="button" href="http://mpi.edu.bd//notice/">
+                                <h4>সকল</h4>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <!-- End notice -->
+                    <div class="row">
+                        <!--div class="col-md-12">
+                            <div class="tit-event">
+                              <h1>Upcoming Event</h1>
+                            </div>
+                            </div-->
+                        <div class="col-md-12">
+                            <div class="eve ">
+                                <div id="calendar"></div>
+                                <!-- Fluid width widget -->        
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading" style="color: #ffffff;background-color: #609513;border-color: #609513;">
+                                        <h3 class="panel-title">
+                                            <span class="fa fa-calendar"></span>
+                                            News & Events
+                                        </h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul class="media-list">
+                                            <li class="media">
+                                                <div class="media-left">
+                                                    <div class="panel panel-primary text-center date">
+                                                        <div class="panel-heading month" style="color: #ffffff;background-color: #609513;border-color: #609513;padding:5px;">
+                                                            <span class="panel-title strong">
+                                                            Feb                                            
+                                                            </span>
+                                                        </div>
+                                                        <div class="panel-body day text-danger" style="padding:0px;font-size:20px;">
+                                                            17                                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading" style="border:none;padding-left:0px;">
+                                                        <a href="http://mpi.edu.bd//m/event/10" style="text-decoration: none;"> বঙ্গবন্ধুর জীবনের উপর তথ্যচিত্র </a>
+                                                    </h5>
+                                                    <p>
+                                                        বঙ্গবন্ধুর ওপর অসাধারণ একটি কাজ প্রামাণ্যচিত্র ‘রহমান, দ্য ফাদার অফ বেঙ্গল’। আমাদের মহান মুক্তিযুদ্ধের বিজয়ের কারণে গোটা বিশ্বে বাংলাদেশ একটি আলোচিত নাম। আর এই সাফল্যের শিরোমণি আর কেউ নন                                   
+                                                    </p>
+                                                </div>
+                                                <div class="media-right">
+                                                    <img class="lazy" data-src="http://mpi.edu.bd//public/image/event/134d4b00ca.jpg" alt="বঙ্গবন্ধুর জীবনের উপর তথ্যচিত্র" style="height:75px;">
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <div class="media-left">
+                                                    <div class="panel panel-primary text-center date">
+                                                        <div class="panel-heading month" style="color: #ffffff;background-color: #609513;border-color: #609513;padding:5px;">
+                                                            <span class="panel-title strong">
+                                                            Jan                                            
+                                                            </span>
+                                                        </div>
+                                                        <div class="panel-body day text-danger" style="padding:0px;font-size:20px;">
+                                                            26                                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading" style="border:none;padding-left:0px;">
+                                                        <a href="http://mpi.edu.bd//m/event/9" style="text-decoration: none;"> আনন্দ ব্যালী </a>
+                                                    </h5>
+                                                    <p>
+                                                        মাননীয় প্রধানমন্ত্রী শেখ হাসিনা উপজেলা পর্যায়ে ৩২৯ টেকনিক্যাল স্কুল এন্ড কলেজ স্থাপন প্রকল্প  একেক সভায় অনুমোদন করায় আনন্দ রেলী                                   
+                                                    </p>
+                                                </div>
+                                                <div class="media-right">
+                                                    <img class="lazy" data-src="http://mpi.edu.bd//public/image/event/428a3f300b.jpg" alt="আনন্দ ব্যালী" style="height:75px;">
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <div class="media-left">
+                                                    <div class="panel panel-primary text-center date">
+                                                        <div class="panel-heading month" style="color: #ffffff;background-color: #609513;border-color: #609513;padding:5px;">
+                                                            <span class="panel-title strong">
+                                                            Jan                                            
+                                                            </span>
+                                                        </div>
+                                                        <div class="panel-body day text-danger" style="padding:0px;font-size:20px;">
+                                                            5                                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading" style="border:none;padding-left:0px;">
+                                                        <a href="http://mpi.edu.bd//m/event/8" style="text-decoration: none;"> MoU Signing ceremony between Creative IT &Mymensingh Polytechnic Institute  </a>
+                                                    </h5>
+                                                    <p>
+                                                        MoU Signing ceremony between Creative IT &Mymensingh Polytechnic Institute                                    
+                                                    </p>
+                                                </div>
+                                                <div class="media-right">
+                                                    <img class="lazy" data-src="http://mpi.edu.bd//public/image/event/c2b17682c9.jpg" alt="MoU Signing ceremony between Creative IT &Mymensingh Polytechnic Institute " style="height:75px;">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="http://mpi.edu.bd//m/eventshow" class="btn btn-default btn-block">More Events »</a>
+                                    </div>
+                                </div>
+                                <!-- End fluid width widget --> 
+                            </div>
+                        </div>
+                    </div>
+                    <!--Start department -->      
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4>সেবা প্রদান প্রতিশ্রুতি </h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/service.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/m/citizen">সিটিজেন চার্টার</a> </li>
+                                        <li> <a href="http://mpi.edu.bd/">ফোকাল পয়েন্ট কর্মকর্তা/পরিবীক্ষণ কমিটি</a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> পরিবীক্ষণ/মূল্যায়ন প্রতিবেদন  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/">আইন/বিধি/নীতিমালা/পরিপত্র</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4>উদ্ভাবনী কার্যক্রম</h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/inovation.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/"> বার্ষিক উদ্ভাবন কর্মপরিকল্পনা ২০২২-২৩ </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> ইনোভেশন টিম   </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> উদ্ভাবনী কার্যক্রমের অগ্রগতি প্রতিবেদনসমূহ  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/">  বাস্তবায়িত উদ্ভাবনী ধারণা ও সেবার ডাটাবেজ  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4>জাতীয় শুদ্ধাচার কৌশল</h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/nis_logo3.jpg" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/"> জাতীয় শুদ্ধাচার কৌশল  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> অধিদপ্তরের কর্মপরিকল্পনা/ত্রৈমাসিক প্রতিবেদন</a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> জাতীয় শুদ্ধাচার কৌশল কমিটি  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> শুদ্ধাচার  পুরুস্কারপ্রাপ্তদের তালিকা  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4>বার্ষিক কর্মসম্পাদন চুক্তি</h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/growth.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/"> নীতিমালা [Policy] </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> ত্রৈমাসিক অর্জন প্রতিবেদন</a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> অধিনস্থ প্রতিষ্ঠানসমূহের চুক্তিসমূহ  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> কারিগরি শিক্ষা অধিদপ্তরের বার্ষিক কর্মসম্পাদন চুক্তি  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4>অভিযোগ প্রতিকার ব্যবস্থাপনা</h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/complain.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/"> অনিক ও আপীল কর্মকর্তাগণ  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> আইন/বিধি/নীতিমালা/পরিপত্র/নির্দেশিকা/প্রজ্ঞাপন  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> অনলাইনে অভিযোগ দাখিল  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> অভিযোগ গ্রহণ ও নিষ্পত্তি কার্যক্রমের অগ্রগতি প্রতিবেদন  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4>তথ্য অধিকার</h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/rightinfo.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/"> তথ্য প্রদানকারী কর্মকর্তা </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> তথ্য প্রাপ্তির ফরম</a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> স্বপ্রণোদিত তথ্য প্রকাশ নির্দেশিকা এবং তথ্যের ক্যাটাগরি  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/"> তথ্য অধিকার কর্মপরিকল্পনার অগ্রগতি  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4>কম্পিউটার</h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/computer.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/m/teachers/Computer"> শিক্ষকদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/students/Computer"> ছাত্রছাত্রীদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/results/Computer"> রেজাল্ট  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/semplan"> সেমিষ্টার প্ল্যান  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/digitalcontent"> ডিজিটাল কনটেন্ট  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4> সিভিল </h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/civil.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/m/teachers/Civil"> শিক্ষকদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/students/Civil"> ছাত্রছাত্রীদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/results/Civil"> রেজাল্ট  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/semplan"> সেমিষ্টার প্ল্যান  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/digitalcontent"> ডিজিটাল কনটেন্ট  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4> মেকানিক্যাল </h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img  class="lazy" data-src="http://mpi.edu.bd/public/image/icon/mechanical.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/m/teachers/Mechanical"> শিক্ষকদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/students/Mechanical"> ছাত্রছাত্রীদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/results/Mechanical"> রেজাল্ট  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/semplan"> সেমিষ্টার প্ল্যান  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/digitalcontent"> ডিজিটাল কনটেন্ট  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4> ইলেকট্রিক্যাল </h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/electrical.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/m/teachers/Electrical"> শিক্ষকদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/students/Electrical"> ছাত্রছাত্রীদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/results/Electrical"> রেজাল্ট  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/semplan"> সেমিষ্টার প্ল্যান  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/digitalcontent"> ডিজিটাল কনটেন্ট  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4> ইলেকট্রনিক্স </h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/electronics.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/m/teachers/Electronics"> শিক্ষকদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/students/Electronics"> ছাত্রছাত্রীদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/results/Electronics"> রেজাল্ট  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/semplan"> সেমিষ্টার প্ল্যান  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/digitalcontent"> ডিজিটাল কনটেন্ট  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4> পাওয়ার </h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/power.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/m/teachers/Power"> শিক্ষকদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/students/Power"> ছাত্রছাত্রীদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/results/Power"> রেজাল্ট  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/semplan"> সেমিষ্টার প্ল্যান  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/digitalcontent"> ডিজিটাল কনটেন্ট  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4> ইলেক্ট্রো-মেডিকেল </h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/electro-medical.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/m/teachers/Electro-medical"> শিক্ষকদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/students/Electro-medical"> ছাত্রছাত্রীদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/results/Electromedical"> রেজাল্ট  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/semplan"> সেমিষ্টার প্ল্যান  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/digitalcontent"> ডিজিটাল কনটেন্ট  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="department_section">
+                                <h4> আর এস </h4>
+                                <div class="dept_icon col-md-4 col-sm-4 col-xs-12"> <img class="lazy" data-src="http://mpi.edu.bd/public/image/icon/rs.png" alt="#"> </div>
+                                <div class="dept_classification col-md-8 col-sm-8 col-xs-12">
+                                    <ul>
+                                        <li> <a href="http://mpi.edu.bd/m/teachers/RS"> শিক্ষকদের তথ্য  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/semplan"> সেমিষ্টার প্ল্যান  </a> </li>
+                                        <li> <a href="http://mpi.edu.bd/m/digitalcontent"> ডিজিটাল কনটেন্ট  </a> </li>
+                                        <li> <a href="">  </a> </li>
+                                        <li> <a href="">  </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Department -->                                     
+                    <!-- End Left Section --> 
+                    <style>
+                        .panel-primary{
+                        border-color: #609513;
+                        }
+                    </style>
+                </div>
+                <!-- RIGHT SIDE -->
+                <div class="col-md-3 right_section">
+                    <div class="person">
+                        <h4> অধ্যক্ষ মহোদয়</h4>
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/principal/9f2c849e06.jpg" class="img-responsive" alt="Principal" title="Md. Showkat Hossain"/> <br/>						
+                        <a href="http://mpi.edu.bd/m/principal" title="#">মোঃ শওকত হোসেন</a>
+                        <a href="http://mpi.edu.bd/m/principal" title="#">অধ্যক্ষের বানী </a>
+                    </div>
+                    <div class="person">
+                        <h4> উপাধ্যক্ষ মহোদয়</h4>
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/principal/4950fa9d24.jpg" class="img-responsive" alt="Vice-Principal" title="Md. Shoket Hossain"/> <br/>
+                        <a href="http://mpi.edu.bd/m/vice_principal" >Md. Shoket Hossain</a>
+                        <a href="http://mpi.edu.bd/m/vice_principal" >উপাধ্যক্ষের বানী </a>
+                    </div>
+                    <div class="person">
+                        <h4> জাতীয় সংগীত  </h4>
+                        <audio controls>
+                            <source src="http://mpi.edu.bd/public/video/bd_national_anthem.mp3" type="audio/mpeg">
+                        </audio>
+                        <a href="#" data-toggle="modal" data-target="#nationalsong" style="font-size:14px;">ভিডিও</a>              
+                    </div>
+                    <div class="person">
+                        <h4> ফেসবুক পেইজ</h4>
+                        <div class="fb-page" data-href="https://www.facebook.com/mpimymen/" data-tabs="timeline" data-width="" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/mpimymen/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/mpimymen/">Mymensingh Polytechnic Institute</a></blockquote>
+                        </div>
+                    </div>
+                    <div class="gperson" >
+                        <h4 style="background: #609513;padding: 10px;color: #fff;"><a href="http://mpi.edu.bd/m/gallery" style="color:#fff;font-size:14px;">ফটোগ্যালারী</a> </h4>
+                        <span id="gallery">
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/dc0b3b1fae.jpeg" data-src="http://mpi.edu.bd/public/image/gallery/dc0b3b1fae.jpeg" data-sub-html="<h4>Study Tour(2019-20)</h4>">
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/gallery/dc0b3b1fae.jpeg" style="height:65px; width:80px; padding-bottom:5px;padding-left:5px;">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/5822360c8e.jpg" data-src="http://mpi.edu.bd/public/image/gallery/5822360c8e.jpg" data-sub-html="<h4>Study Tour (Session 19-20)</h4>">
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/gallery/5822360c8e.jpg" style="height:65px; width:80px; padding-bottom:5px;padding-left:5px;">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/df3b0a0b8b.jpg" data-src="http://mpi.edu.bd/public/image/gallery/df3b0a0b8b.jpg" data-sub-html="<h4>Annual Sports-2022 (3)</h4>">
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/gallery/df3b0a0b8b.jpg" style="height:65px; width:80px; padding-bottom:5px;padding-left:5px;">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/f766a1bd67.jpg" data-src="http://mpi.edu.bd/public/image/gallery/f766a1bd67.jpg" data-sub-html="<h4>Annual Sports-2022 (2)</h4>">
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/gallery/f766a1bd67.jpg" style="height:65px; width:80px; padding-bottom:5px;padding-left:5px;">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/aca9398f56.jpg" data-src="http://mpi.edu.bd/public/image/gallery/aca9398f56.jpg" data-sub-html="<h4>Annual Sports-2022 (1)</h4>">
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/gallery/aca9398f56.jpg" style="height:65px; width:80px; padding-bottom:5px;padding-left:5px;">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/9e7b559b2a.jpg" data-src="http://mpi.edu.bd/public/image/gallery/9e7b559b2a.jpg" data-sub-html="<h4>MoU Signing ceremony between Creative IT &Mymensingh  Polytechnic Institute </h4>">
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/gallery/9e7b559b2a.jpg" style="height:65px; width:80px; padding-bottom:5px;padding-left:5px;">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/36a197ba68.jpg" data-src="http://mpi.edu.bd/public/image/gallery/36a197ba68.jpg" data-sub-html="<h4>শহীদ বুদ্ধিজীবী  দিবস ২০১৯</h4>">
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/gallery/36a197ba68.jpg" style="height:65px; width:80px; padding-bottom:5px;padding-left:5px;">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/7001e1e89e.jpg" data-src="http://mpi.edu.bd/public/image/gallery/7001e1e89e.jpg" data-sub-html="<h4>Mobile Games & Apps Development Seminar</h4>">
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/gallery/7001e1e89e.jpg" style="height:65px; width:80px; padding-bottom:5px;padding-left:5px;">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/3d2707f936.jpg" data-src="http://mpi.edu.bd/public/image/gallery/3d2707f936.jpg" data-sub-html="<h4>জাতির জনক বঙ্গবন্ধু শেখ মুজিবুর রহমানের ৪৪তম শাহাদাত বার্ষিকী </h4>">
+                        <img class="lazy" data-src="http://mpi.edu.bd/public/image/gallery/3d2707f936.jpg" style="height:65px; width:80px; padding-bottom:5px;padding-left:5px;">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/6c61b5a28a.jpg" data-src="http://mpi.edu.bd/public/image/gallery/6c61b5a28a.jpg" data-sub-html="<h4>জাতির জনক বঙ্গবন্ধু শেখ মুজিবুর রহমানের ৪৪তম শাহাদাত বার্ষিকী </h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/d9af7d8ada.jpg" data-src="http://mpi.edu.bd/public/image/gallery/d9af7d8ada.jpg" data-sub-html="<h4>জাতির জনক বঙ্গবন্ধু শেখ মুজিবুর রহমানের ৪৪তম শাহাদাত বার্ষিকী </h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/6f50733578.jpg" data-src="http://mpi.edu.bd/public/image/gallery/6f50733578.jpg" data-sub-html="<h4>বার্ষিক তাঁবু জলসা দীক্ষা ও বিদায় অনুষ্ঠান ২০১৯</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/e713aa5fe1.jpg" data-src="http://mpi.edu.bd/public/image/gallery/e713aa5fe1.jpg" data-sub-html="<h4>বার্ষিক তাঁবু জলসা দীক্ষা ও বিদায় অনুষ্ঠান ২০১৯</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/7bf162ff49.jpg" data-src="http://mpi.edu.bd/public/image/gallery/7bf162ff49.jpg" data-sub-html="<h4>বাংলা বর্ষবরণ-২০১৯</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/84660040a7.jpg" data-src="http://mpi.edu.bd/public/image/gallery/84660040a7.jpg" data-sub-html="<h4>বাংলা বর্ষবরণ-২০১৯</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/4986d0a131.jpeg" data-src="http://mpi.edu.bd/public/image/gallery/4986d0a131.jpeg" data-sub-html="<h4>২৬ মার্চ মাননীয় প্রধানমন্ত্রী শেখ হাসিনা সাথে সমস্বরে জাতীয় সংগীত </h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/d0bf7e3368.jpeg" data-src="http://mpi.edu.bd/public/image/gallery/d0bf7e3368.jpeg" data-sub-html="<h4>২৬ মার্চ পুস্পস্তবক অর্পণ </h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/7cf934aea7.jpeg" data-src="http://mpi.edu.bd/public/image/gallery/7cf934aea7.jpeg" data-sub-html="<h4>২৬ মার্চ জাতীয় পতাকার প্রতি সম্মান প্রদর্শন </h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/38a1e34305.jpg" data-src="http://mpi.edu.bd/public/image/gallery/38a1e34305.jpg" data-sub-html="<h4>বিশ্ব অটিজম সচেতনতা দিবস-২০১৯</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/b8eb12a7d4.jpg" data-src="http://mpi.edu.bd/public/image/gallery/b8eb12a7d4.jpg" data-sub-html="<h4>MPI T20</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/a7007e894b.jpg" data-src="http://mpi.edu.bd/public/image/gallery/a7007e894b.jpg" data-sub-html="<h4>MPI T20</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/4758d964b9.jpg" data-src="http://mpi.edu.bd/public/image/gallery/4758d964b9.jpg" data-sub-html="<h4>Regional Skills Competition-2018</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/01b0cc1cab.jpg" data-src="http://mpi.edu.bd/public/image/gallery/01b0cc1cab.jpg" data-sub-html="<h4>Regional Skills Competition-2018</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/90728204b5.jpg" data-src="http://mpi.edu.bd/public/image/gallery/90728204b5.jpg" data-sub-html="<h4>নিরাপদ সড়ক নিশ্চিতকরণ</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/b0e946751a.jpg" data-src="http://mpi.edu.bd/public/image/gallery/b0e946751a.jpg" data-sub-html="<h4>নিরাপদ সড়ক নিশ্চিতকরণ</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/fb6735cef7.jpg" data-src="http://mpi.edu.bd/public/image/gallery/fb6735cef7.jpg" data-sub-html="<h4>মাদকমুক্ত ও মাদকমুক্ত ক্যাম্পাস</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/7ab3e872e1.jpg" data-src="http://mpi.edu.bd/public/image/gallery/7ab3e872e1.jpg" data-sub-html="<h4>মাদকমুক্ত ও মাদকমুক্ত ক্যাম্পাস</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/6a597552af.jpg" data-src="http://mpi.edu.bd/public/image/gallery/6a597552af.jpg" data-sub-html="<h4>মাদকমুক্ত ও মাদকমুক্ত ক্যাম্পাস</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/e8dd744281.jpg" data-src="http://mpi.edu.bd/public/image/gallery/e8dd744281.jpg" data-sub-html="<h4>মাদকমুক্ত ও মাদকমুক্ত ক্যাম্পাস</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/a109f879d9.jpg" data-src="http://mpi.edu.bd/public/image/gallery/a109f879d9.jpg" data-sub-html="<h4>মাদকমুক্ত ও মাদকমুক্ত ক্যাম্পাস</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/ae9ad33207.jpg" data-src="http://mpi.edu.bd/public/image/gallery/ae9ad33207.jpg" data-sub-html="<h4>মাদকমুক্ত ও মাদকমুক্ত ক্যাম্পাস</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/d346e70f84.jpg" data-src="http://mpi.edu.bd/public/image/gallery/d346e70f84.jpg" data-sub-html="<h4>ন‌িরাপদ সড়ক ন‌‌িশ্চি‌তকরণ‌ে জনসচ‌েতনতা বৃদ্ধ‌ির লক্ষ‌্য‌ে মাননীয় প্রধানমন্ত্রীর ন‌ির্দ‌‌েশ�</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/00e5f1adf3.jpg" data-src="http://mpi.edu.bd/public/image/gallery/00e5f1adf3.jpg" data-sub-html="<h4>আলোচনা সভা মুজিব নগর দিবস</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/a7d3a2a9c5.jpg" data-src="http://mpi.edu.bd/public/image/gallery/a7d3a2a9c5.jpg" data-sub-html="<h4>১৫ আগষ্ট ১৮ বঙ্গবন্ধু শেখ মুজিবুর রহমান এর প্রতি শ্রদ্ধাঞ্জলি</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/c669e2adbf.jpg" data-src="http://mpi.edu.bd/public/image/gallery/c669e2adbf.jpg" data-sub-html="<h4>সংবর্ধনা অনুষ্ঠান-১৮</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/15ebe0928d.jpg" data-src="http://mpi.edu.bd/public/image/gallery/15ebe0928d.jpg" data-sub-html="<h4>বিভাগীয় কমিশনার অরিয়েন্টেশন প্রোগ্রাম-১৮</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/a4d916e54f.jpg" data-src="http://mpi.edu.bd/public/image/gallery/a4d916e54f.jpg" data-sub-html="<h4>১৫ আগষ্ট ১৮ বঙ্গবন্ধু শেখ মুজিবুর রহমান শাহদৎ বার্ষীকি</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/8457324c54.jpg" data-src="http://mpi.edu.bd/public/image/gallery/8457324c54.jpg" data-sub-html="<h4>ইন হাউজ ট্রেনিং প্রোগ্রাম</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/458491a864.jpg" data-src="http://mpi.edu.bd/public/image/gallery/458491a864.jpg" data-sub-html="<h4>কম্পিউটার বিভাগের শিক্ষক মন্ডলী</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/36fee42d60.jpg" data-src="http://mpi.edu.bd/public/image/gallery/36fee42d60.jpg" data-sub-html="<h4>র‌্যাগ ডে</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/772034000b.jpg" data-src="http://mpi.edu.bd/public/image/gallery/772034000b.jpg" data-sub-html="<h4>ভলিবল পুরস্কার বিতরণ অনুষ্ঠান-২০১৮</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/e1d9203be3.jpg" data-src="http://mpi.edu.bd/public/image/gallery/e1d9203be3.jpg" data-sub-html="<h4>জাতীয় শোক দিবস ২০১৮</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/76db6c5954.jpg" data-src="http://mpi.edu.bd/public/image/gallery/76db6c5954.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/448bc20fce.jpg" data-src="http://mpi.edu.bd/public/image/gallery/448bc20fce.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/f30684c1b7.jpg" data-src="http://mpi.edu.bd/public/image/gallery/f30684c1b7.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/53ed8b9ec5.jpg" data-src="http://mpi.edu.bd/public/image/gallery/53ed8b9ec5.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/e07b3f265f.jpg" data-src="http://mpi.edu.bd/public/image/gallery/e07b3f265f.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/952c5af72f.jpg" data-src="http://mpi.edu.bd/public/image/gallery/952c5af72f.jpg" data-sub-html="<h4>Computer 2014-15 (Campus pic)</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/5a15410845.jpg" data-src="http://mpi.edu.bd/public/image/gallery/5a15410845.jpg" data-sub-html="<h4>21st Feburary</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/81ca1a4920.jpg" data-src="http://mpi.edu.bd/public/image/gallery/81ca1a4920.jpg" data-sub-html="<h4>MPI Student</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/e90ce032b3.jpg" data-src="http://mpi.edu.bd/public/image/gallery/e90ce032b3.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/ad78da9a97.jpg" data-src="http://mpi.edu.bd/public/image/gallery/ad78da9a97.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/80f0a72fdc.jpg" data-src="http://mpi.edu.bd/public/image/gallery/80f0a72fdc.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/b834fb9472.jpg" data-src="http://mpi.edu.bd/public/image/gallery/b834fb9472.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/97c98b27ba.jpg" data-src="http://mpi.edu.bd/public/image/gallery/97c98b27ba.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/8ca1b95391.jpg" data-src="http://mpi.edu.bd/public/image/gallery/8ca1b95391.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/16baffb5fe.jpg" data-src="http://mpi.edu.bd/public/image/gallery/16baffb5fe.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/a4f73bf1d5.jpg" data-src="http://mpi.edu.bd/public/image/gallery/a4f73bf1d5.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/d087b10101.jpg" data-src="http://mpi.edu.bd/public/image/gallery/d087b10101.jpg" data-sub-html="<h4>Welcome</h4>">
+                        </a>
+                        <a href="" class="" data-responsive="http://mpi.edu.bd/public/image/gallery/23ba71bd95.jpg" data-src="http://mpi.edu.bd/public/image/gallery/23ba71bd95.jpg" data-sub-html="<h4></h4>">
+                        </a>
+                        </span>
+                        <a href="http://mpi.edu.bd/m/gallery">
+                            <h5>আরও ছবি...</h5>
+                        </a>
+                    </div>
+                    <div class="person">
+                        <h4><a href="http://mpi.edu.bd/m/video" style="color:#fff;">ভিডিও</a></h4>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VDNGFirdtfs"> </iframe>
+                        </div>
+                    </div>
+                    <a href="http://mpi.edu.bd/m/video">
+                        <h5>আরও  ভিডিও...</h5>
+                    </a>
+                    <div class="person">
+                        <h4>দর্শক সংখ্যা:  </h4>
+                        <!-- Start of CuterCounter Code -->
+                        <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hvxokqxa&nd=9&style=22" border="0" alt="website counter"></a>
+                        <!-- End of CuterCounter Code -->
+                    </div>
+                </div>
+            </div>
+            <div id="nationalsong" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-md">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">
+                                <span style="color:#000;padding-left:20px;font-size:28px;">জাতীয় সংগীত </span>
+                            </h4>
+                        </div>
+                        <div class="modal-body" >
+                            <!--video style="width:100%;" controls>
+                                <source src="http://mpi.edu.bd/public/video/national_song.mp4" type="video/mp4">
+                                </video-->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LgbKJE6uPrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="background-color:#609513; margin-top:10px;">
+                <div class="col-sm-5">
+                    <div class="col-sm-6 footer">
+                        <table>
+                            <tr>
+                                <td  colspan="2">
+                                    <h5 style="color:white; text-align:left;"><b>  কেন্দ্রীয় ই-সেবা  </b></h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td  width="10%"><img src="http://mpi.edu.bd/public/image/icon/bg_block_list.png"></td>
+                                <td> <a target="new" style="color:black;font-size:12px;" href="https://services.nidw.gov.bd/"> NID তথ্য হালনাগাদকরণ </a></td>
+                            </tr>
+                            <tr>
+                                <td  width="10%"><img src="http://mpi.edu.bd/public/image/icon/bg_block_list.png"></td>
+                                <td> <a target="new" style="color:black;font-size:12px;" href="http://www.bmet.gov.bd/BMET/onlinaVisaCheckAction"> অনলাইনে পাসপোর্টের আবেদন </a></td>
+                            </tr>
+                            <tr>
+                                <td  width="10%"><img src="http://mpi.edu.bd/public/image/icon/bg_block_list.png"></td>
+                                <td> <a target="new" style="color:black;font-size:12px;" href="http://www.bpsc.gov.bd/"> সরকারি কর্ম-কমিশনে আবেদন </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-6 footer">
+                        <table>
+                            <tr>
+                                <td  colspan="2">
+                                    <h5 style="color:white;"><b>ম.প.ই অভ্যন্তরীণ ই-সেবা </b></h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td  width="15%"><img src="http://mpi.edu.bd/public/image/icon/bg_block_list.png"></td>
+                                <td> <a style="color:black;font-size:12px;" href="#" data-toggle="modal" data-target="#download"> বিভিন্ন ফরম ডাউনলোড </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td  width="27%"><img src="http://mpi.edu.bd/public/image/icon/bg_block_list.png"></td>
+                                <td> <a href="http://mpi.edu.bd/m/datastore" target="" style="color:#fff;font-size:12px;">তথ্য-সংগ্রহ</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <center><img class="lazy" data-src="http://mpi.edu.bd/public/image/backend_logo.png" alt="" style="height: 100px; width: 100px; margin-top: 20px;margin-bottom: 10px;"></center>
+                </div>
+                <div class="col-sm-5" >
+                    <div class="col-sm-6 footer">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    <h5 style="color:white;"><b>অভ্যন্তরীণ ই-সেবা</b></h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td  width="15%"><img src="http://mpi.edu.bd/public/image/icon/bg_block_list.png"></td>
+                                <td> 
+                                    <a style="color:black;font-size:12px;" target="new" href="http://www.techedu.gov.bd/">কারিগরি শিক্ষা অধিদপ্তর  </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="15%"><img src="http://mpi.edu.bd/public/image/icon/bg_block_list.png"></td>
+                                <td> <a style="color:black;font-size:12px;" target="new"  href="http://www.bteb.gov.bd/">কারিগরি শিক্ষা বোর্ড </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td  width="15%"><img src="http://mpi.edu.bd/public/image/icon/bg_block_list.png"></td>
+                                <td> <a style="color:black;font-size:12px;" target="new" href="http://www.mymensinghdiv.gov.bd/">ময়মনসিংহ বিভাগ  </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-6 footer">
+                        <table >
+                            <tr>
+                                <td>
+                                    <h5 style="color:white;"><b>কারিগরি সহায়তায়</b></h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://mpi.edu.bd/m/develop" title="Computer Technology, session:14-15" style="color:black;">Computer Technology Session: 2014-15</a></li></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="fb-root"></div>
+        </main>        
+    </body>
+</html>
