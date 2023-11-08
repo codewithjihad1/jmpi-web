@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.container {
+    @apply max-w-7xl mx-auto lg:px-8;
+}
 
 .row {
     @apply bg-lime-800;
 }
 
 .top_bar {
-    @apply md:w-5/6 mx-auto flex justify-between p-1;
+    @apply max-w-7xl mx-auto flex justify-between p-1 lg:px-8;
 }
 
 .menu-items {
@@ -17,4 +21,35 @@
 
 .sub-menu {
     @apply flex items-center;
+}
+
+.content {
+    @apply grid gap-4 py-6;
+    grid-template-columns: 75% 25%;
+}
+
+.latest-news {
+    @apply bg-lime-600 relative py-2 px-5;
+}
+
+.notice {
+    @apply mt-8 py-4 px-6 border-2 border-lime-600;
+}
+
+.notice > h3 {
+    @apply text-3xl text-lime-600 underline mb-4;
+    font-family: 'Agbalumo', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+}
+
+.notice-items li a > img {
+    @apply w-4;
+}
+.notice-items li {
+    @apply my-2;
+}
+.notice-items li a {
+    @apply flex gap-4;
+}
+.notice-items li a strong {
+    @apply text-red-500 italic;
 }
