@@ -8,11 +8,11 @@
 }
 
 .row {
-    @apply bg-lime-800;
+    @apply bg-lime-600;
 }
 
 .top_bar {
-    @apply max-w-7xl mx-auto flex justify-between p-1 lg:px-8;
+    @apply max-w-7xl mx-auto flex justify-between py-3 lg:px-8;
 }
 
 .menu-items {
@@ -41,15 +41,12 @@
     font-family: 'Agbalumo', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
 }
 
-.notice-items li a > img {
-    @apply w-4;
-}
-.notice-items li {
-    @apply my-2;
-}
-.notice-items li a {
-    @apply flex gap-4;
-}
-.notice-items li a strong {
-    @apply text-red-500 italic;
+.bottom_line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(101, 163, 13);
 }

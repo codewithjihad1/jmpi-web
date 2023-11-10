@@ -6,15 +6,27 @@
     <title>JMPI - WEB</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
+<body class="bg-[#f1eeeeb5]">
     <main>
         <!-- Header Section Start -->
         <header class="header shadow">
             <!-- Header Top -->
             <div class="row">
                 <div class="top_bar">
-                    <a href="mailto:modelpolytechnic.info@gmail.com" class="text-white"><i class="fa fa-envelope-o" aria-hidden="true"> modelpolytechnic.info@gmail.com</i></a>
-                    <a href="tel:01710544252" class="text-white"><i class="fa fa-volume-control-phone" aria-hidden="true"> 01710544252</i></a>
+                    <div class="top_left flex justify-between gap-3">
+                        <img src="./images/mail.png" alt="email" class="w-4">
+                        <a href="mailto:modelpolytechnic.info@gmail.com" class="text-white underline italic"> modelpolytechnic.info@gmail.com</a>
+                        <img src="./images/telephone.png" alt="call" class="w-4">
+                        <a href="tel:01710544252" class="text-white"> 01710544252</a>
+                    </div>
+                    <div class="top_right">
+                        <ul class="flex justify-between gap-3">
+                            <li><a href="#"><img class="w-6" src="./images/facebook.png" alt="facebook"></a></li>
+                            <li><a href="#"><img class="w-6" src="./images/youtube.png" alt="youtube"></a></li>
+                            <li><a href="#"><img class="w-6" src="./images/instagram.png" alt="instagram"></a></li>
+                            <li><a href="#"><img class="w-6" src="./images/linkedin.png" alt="linkedin"></a></li>
+                        </ul>
+                    </div>
                 </div>                
             </div>
 
@@ -71,27 +83,136 @@
                 </div>
 
                 <!-- Notice board -->
-                <div class="notice">
+                <section class="notice">
                     <h3>Notice Board: </h3>
                     <ul class="notice-items">
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
-                        <li><a href="#" _blank><img src="./images/check-mark.png" alt="list" /> <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>  <strong>২২/০৮/২০২৩ খ্রিঃ</strong></a></li>
+                        <li class="flex gap-3 my-1">
+                            <a class="text-neutral-600 flex hover:text-lime-600 hover:underline" href="#" _blank>
+                                <img class="w-4" src="./images/check-mark.png" alt="list" /> 
+                                <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>
+                            </a>
+                            <strong class="text-red-500 italic">(২২/০৮/২০২৩ খ্রিঃ)</strong>
+                        </li>
+                        <li class="flex gap-3 my-1">
+                            <a class="text-neutral-600 flex hover:text-lime-600 hover:underline" href="#" _blank>
+                                <img class="w-4" src="./images/check-mark.png" alt="list" /> 
+                                <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>
+                            </a>
+                            <strong class="text-red-500 italic">(২২/০৮/২০২৩ খ্রিঃ)</strong>
+                        </li>
+                        <li class="flex gap-3 my-1">
+                            <a class="text-neutral-600 flex hover:text-lime-600 hover:underline" href="#" _blank>
+                                <img class="w-4" src="./images/check-mark.png" alt="list" /> 
+                                <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>
+                            </a>
+                            <strong class="text-red-500 italic">(২২/০৮/২০২৩ খ্রিঃ)</strong>
+                        </li>
+                        <li class="flex gap-3 my-1">
+                            <a class="text-neutral-600 flex hover:text-lime-600 hover:underline" href="#" _blank>
+                                <img class="w-4" src="./images/check-mark.png" alt="list" /> 
+                                <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>
+                            </a>
+                            <strong class="text-red-500 italic">(২২/০৮/২০২৩ খ্রিঃ)</strong>
+                        </li>
+                        <li class="flex gap-3 my-1">
+                            <a class="text-neutral-600 flex hover:text-lime-600 hover:underline" href="#" _blank>
+                                <img class="w-4" src="./images/check-mark.png" alt="list" /> 
+                                <span>এইচএসসি (ভোকেশনাল) হতে ৪র্থ পর্বে ভর্তি সংক্রান্ত নোটিশ।</span>
+                            </a>
+                            <strong class="text-red-500 italic">(২২/০৮/২০২৩ খ্রিঃ)</strong>
+                        </li>
                     </ul>
 
                     <div class="all-notice text-right">
                         <button class="py-1 px-7 bg-lime-600 text-white rounded-md">All Notices</button>
                     </div>
-                </div>
+                </section>
 
                 
+                <!-- Department section start -->
+                <section class="grid grid-cols-2 gap-7 py-10">
+                    <!-- Department -->
+                    <div class="department shadow-2xl py-4 px-5 rounded-2xl">
+                        <h3 class="text-2xl text-lime-600 font-[Agbalumo] pb-2 relative bottom_line">Computer </h3>
+                        <div class="grid grid-cols-3 gap-3 items-center pt-4">
+                            <div class="col-span-1">
+                                <img class="w-24" src="./images/hacker.png" alt="Computer">
+                            </div>
+                            <ul class="col-span-2 list-disc">
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Teachers Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Students Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Results</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Semester Plan</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Digital Content</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Department -->
+                    <div class="department shadow-2xl py-4 px-5 rounded-2xl">
+                        <h3 class="text-2xl text-lime-600 font-[Agbalumo] pb-2 relative bottom_line">Electical </h3>
+                        <div class="grid grid-cols-3 gap-3 items-center pt-4">
+                            <div class="col-span-1">
+                                <img class="w-24" src="./images/backup.png" alt="Computer">
+                            </div>
+                            <ul class="col-span-2 list-disc">
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Teachers Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Students Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Results</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Semester Plan</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Digital Content</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Department -->
+                    <div class="department shadow-2xl py-4 px-5 rounded-2xl">
+                        <h3 class="text-2xl text-lime-600 font-[Agbalumo] pb-2 relative bottom_line">Mechanical </h3>
+                        <div class="grid grid-cols-3 gap-3 items-center pt-4">
+                            <div class="col-span-1">
+                                <img class="w-24" src="./images/mechanical.png" alt="Computer">
+                            </div>
+                            <ul class="col-span-2 list-disc">
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Teachers Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Students Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Results</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Semester Plan</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Digital Content</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Department -->
+                    <div class="department shadow-2xl py-4 px-5 rounded-2xl">
+                        <h3 class="text-2xl text-lime-600 font-[Agbalumo] pb-2 relative bottom_line">Civil </h3>
+                        <div class="grid grid-cols-3 gap-3 items-center pt-4">
+                            <div class="col-span-1">
+                                <img class="w-24" src="./images/engineers.png" alt="Computer">
+                            </div>
+                            <ul class="col-span-2 list-disc">
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Teachers Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Students Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Results</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Semester Plan</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Digital Content</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Department -->
+                    <div class="department shadow-2xl py-4 px-5 rounded-2xl">
+                        <h3 class="text-2xl text-lime-600 font-[Agbalumo] pb-2 relative bottom_line">Textile </h3>
+                        <div class="grid grid-cols-3 gap-3 items-center pt-4">
+                            <div class="col-span-1">
+                                <img class="w-24" src="./images/hacker.png" alt="Computer">
+                            </div>
+                            <ul class="col-span-2 list-disc">
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Teachers Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Students Info</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Results</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Semester Plan</a></li>
+                                <li><a class="hover:underline hover:text-lime-600" href="#">Digital Content</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Department section end -->
             </div>
 
             <!-- Sidebar or Right area -->
