@@ -37,8 +37,7 @@
 }
 
 .notice > h3 {
-    @apply text-3xl text-lime-600 underline mb-4;
-    font-family: 'Agbalumo', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    @apply text-3xl text-lime-600 underline mb-4 font-[Agbalumo];
 }
 
 .bottom_line::after {
